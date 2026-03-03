@@ -57,7 +57,7 @@ function App() {
       </nav>
 
       <section className="hero" style={{ textAlign: 'center', marginBottom: '6rem' }}>
-        <h1 style={{ marginBottom: '1rem' }}>STICK OR DIE.</h1>
+        <h1 style={{ marginBottom: '1rem' }}>STAND OUT FROM THE CROWD.</h1>
         <p style={{ fontSize: '1.4rem', color: '#999', textTransform: 'uppercase', letterSpacing: '4px' }}>
           Exclusive Decals for the Radical Minds
         </p>
@@ -133,12 +133,41 @@ function App() {
         </div>
       )}
       
-      <footer style={{ marginTop: '8rem', textAlign: 'center', opacity: 0.4, paddingBottom: '3rem', borderTop: '1px solid #222', paddingTop: '2rem' }}>
-        <div className="logo" style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>STICKERLAB</div>
-        Contact information: 
+      <footer className="footer-main">
+        <div className="footer-content">
+          <div className="logo" style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>STICKERLAB</div>
+          <p style={{ opacity: 0.7, marginBottom: '2rem', fontWeight: 700 }}>CONTACT: +373 69 123 456</p>
+          
+          <div className="qr-codes-container">
+            <div className="qr-item">
+              <div className="social-label facebook">Facebook</div>
+              <img 
+                src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.facebook.com/stickerlab.md" 
+                alt="Facebook QR" 
+                className="qr-image" 
+              />
+              <a href="https://www.facebook.com/stickerlab.md" target="_blank" rel="noreferrer" className="social-link">@stickerlab.md</a>
+            </div>
+            
+            <div className="qr-item">
+              <div className="social-label instagram">Instagram</div>
+              <img 
+                src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.instagram.com/stickerlab.md/" 
+                alt="Instagram QR" 
+                className="qr-image" 
+              />
+              <a href="https://www.instagram.com/stickerlab.md/" target="_blank" rel="noreferrer" className="social-link">@stickerlab.md</a>
+            </div>
+          </div>
+          
+          <p style={{ marginTop: '3rem', opacity: 0.3, fontSize: '0.8rem', letterSpacing: '2px' }}>
+            &copy; {new Date().getFullYear()} STICKERLAB. ALL SYSTEMS OPERATIONAL.
+          </p>
+        </div>
       </footer>
     </div>
   );
 }
 
 export default App;
+

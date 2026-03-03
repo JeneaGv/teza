@@ -155,3 +155,74 @@ input, textarea {
 input:focus {
   border-color: var(--primary);
 }
+
+.footer-main {
+  margin-top: 8rem;
+  padding: 4rem 2rem;
+  border-top: 1px solid #222;
+  background: rgba(0,0,0,0.5);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.qr-codes-container {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.qr-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255,255,255,0.03);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #222;
+  transition: all 0.3s ease;
+}
+
+.qr-item:hover {
+  border-color: var(--primary);
+  background: rgba(255,0,0,0.05);
+  transform: translateY(-5px);
+}
+
+.qr-image {
+  width: 130px;
+  height: 130px;
+  background: white;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.social-label {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+
+.social-label.facebook { color: #1877F2; }
+.social-label.instagram { color: #E4405F; }
+
+.social-link {
+  color: #888;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #fff;
+}
+
